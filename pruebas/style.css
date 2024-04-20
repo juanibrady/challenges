@@ -1,0 +1,30 @@
+body, ul,li,div{
+    padding: 0;
+    margin: 0;
+}
+body{
+    display: flex;
+    justify-content: center;
+}
+div{
+    display: flex;
+    width: 500px;
+    height: 500px;
+}
+ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style: none;
+    padding-left: 0;
+}
+
+ul li {
+    position: relative;
+}
+
+ul li::before {
+    content: '•'; /* Puedes usar otro símbolo si lo deseas */
+    position: absolute;
+    left: -20px; /* Ajusta esta propiedad según el tamaño de tu marcador */
+}
